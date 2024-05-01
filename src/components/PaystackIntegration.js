@@ -12,7 +12,7 @@ export default function PaystackIntegration() {
 	e.preventDefault()
 	const paystack = new PaystackPop();
 	paystack.newTransaction({
-		key:"pk_test_276077ab02f5ccaa3f0e995727354c74e159f540",
+		key: process.env.REACT_APP_PUBLIC_KEY,
 		amount,
 		email,
 		name,
